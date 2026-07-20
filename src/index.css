@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Roboto+Condensed:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Quicksand", sans-serif;
+  line-height: 1.5;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  color: #ebe7ef;
+  background: radial-gradient(#280a48, #20043d);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  min-height: 80rem;
+}
+
+header {
+  text-align: center;
+  margin: 3rem 0;
+}
+
+header h1 {
+  margin: 0;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 3rem;
+  background: linear-gradient(40deg, #ea00ff, #ea00ff, #03d5ff, #03d5ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.5));
+}
+
+header p {
+  margin: 0;
+  font-size: 1.25rem;
+  color: #8964b0;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.input-area {
+  display: flex;
+  flex-direction: row;
+  gap: 0.25rem;
+}
+
+.input-area input {
+  width: 3rem;
+  height: 3rem;
+  text-align: center;
+  font-size: large;
+  border-color: darkslateblue;
+}
+
+.input-cell.error,
+.input-area input.error:disabled {
+  background-color: rgb(240, 175, 175);
+}
+
+.input-cell.alert,
+.input-area input.alert:disabled {
+  background-color: rgb(235, 200, 112);
+}
+
+.input-cell.correct,
+.input-area input.correct:disabled {
+  background-color: rgb(131, 208, 166);
+}
+
+.input-area input:disabled {
+  background-color: grey;
+}
+
+.section-area {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  justify-content: flex-start;
+  align-items: center;
+  width: 18rem;
+  height: 25rem;
+  padding: 0.5rem;
+}
+
+.section-area p {
+  font-size: large;
+  font-weight: 600;
+}
+
+.section-area p.result {
+  font-size: xx-large;
+  font-weight: 600;
+  color: rgb(196, 89, 196);
+}
+
+.section-area p.footer {
+  margin-bottom: 3rem;
+}
+
+.section-area button {
+  width: 95%;
+  padding: 0.5rem;
+  font-size: medium;
+  background-color: #8964b0;
+  color: aliceblue;
+  border-color: darkslateblue;
+  cursor: pointer;
+}
+
+.section-area button.btn-verificar {
+  margin-top: 2rem;
+  border-color: darkslateblue;
+  background-color: #8964b0;
+}
+
+.section-area button.btn-reiniciar {
+  border-color: rgb(42, 128, 204);
+  background-color: #43a2e1;
+}
+
+.section-area button.btn-verificar:hover {
+  border-color: #764aa5;
+  background-color: #764aa5;
+}
+
+.section-area button.btn-reiniciar:hover {
+  border-color: rgb(11, 74, 130);
+  background-color: #2877ac;
+}
+
+.section-area button.btn-reiniciar:disabled {
+  background-color: #cccccc;
+  border-color: dimgrey;
+}
